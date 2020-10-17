@@ -358,8 +358,8 @@ a.button:hover {
 }
 
 .header_avatar {
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
   object-position: 0px 5px;
   background-color: white;
   border-radius: 100px;
