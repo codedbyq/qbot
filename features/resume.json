@@ -1,0 +1,80 @@
+{
+  "basics": {
+    "name": "Marquis Bentley",
+    "title": "Software Engineer",
+    "website": "www.marquisbentley.com",
+    "age": 26,
+    "location": {
+      "city": "San Francisco, CA",
+      "country": "US",
+      "timeZone": "Pacific Standard Time (PST)"
+    }
+  },
+  "contact": {
+    "email": "marquisbentley@gmail.com",
+    "phone": "408-839-1529",
+    "linkedin": "https://www.linkedin.com/in/marquisbentley",
+    "github": "https://www.github.com/codedbyq"
+  },
+  "work": [
+    {
+      "company": "App Academy",
+      "position": "Hacker in Residence",
+      "startDate": "September 2020",
+      "endDate": null,
+      "summary": "App Academy is spearheaded the development of internal tools and new interview prompts to benefit candidates and the team. \n I also conducted technical screens of coding bootcamp applicants and assessed algorithmic aptitude in various languages, including JavaScript, Ruby, Python, and Java."
+    },
+    {
+      "company": "Project Happy",
+      "position": "Full Stack Engineer",
+      "startDate": "September 2020",
+      "endDate": "October 2020",
+      "summary": "I refined the application’s existing technical design documentation, as well as the existing database schemas. \n I also developed the user authentication and MVP features on the frontend using React and Redux utilizing API calls written with Flask and Marshmallow."
+    },
+    {
+      "company": "Enjoy Technology",
+      "position": "Technical Expert",
+      "startDate": "August 2017",
+      "endDate": "February 2020",
+      "summary": "I conducted in-home technical assistance for more than 1,500 clients, while upselling additional products and service at a 75% percent rate. \n Managed partnerships with companies such as Google, Apple, DJI, Magic Leap and Sonos. \n And developed and facilitated training for new and existing employees to target growth opportunities, resulting in a 20-30% average increase in sales metrics."
+    },
+    {
+      "company": "Best Buy",
+      "position": "Specialty Sales Lead",
+      "startDate": "July 2015",
+      "endDate": "August 2017",
+      "summary": "I introduced a new form of “Value based” sales training for a team of 8 associates to drive team KPIs over the monthly goal by 20% while maintaining the highest customer rating in the region. \n And generated the top individual sales metrics in the region for consecutive months, outpacing peers in revenue by over 45%."
+    }
+  ],
+  "education": [
+    {
+      "institution": "App Academy",
+      "area": "Full Stack Software Engineering",
+      "startDate": "2020",
+      "endDate": "2020",
+      "gpa": ""
+    },
+    {
+      "institution": "Arizona State University",
+      "area": "Software Engineering",
+      "startDate": "2020",
+      "endDate": "2020",
+      "gpa": "3.2"
+    }
+  ],
+  "skills": [
+    { "name": "javascript", "years": 2 },
+    { "name": "react", "years": 1 },
+    { "name": "redux", "years": 1 },
+    { "name": "python", "years": 1 },
+    { "name": "ruby on rails", "years": 1 },
+    { "name": "html", "years": 3 },
+    { "name": "css", "years": 3 },
+    { "name": "sass", "years": 1 },
+    { "name": "postgresql", "years": 1 },
+    { "name": "sql", "years": 1 },
+    { "name": "mongodb", "years": 1 },
+    { "name": "aws", "years": 1 },
+    { "name": "git", "years": 1 }
+  ]
+}
