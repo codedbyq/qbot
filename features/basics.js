@@ -8,7 +8,7 @@ module.exports = function(controller) {
         setTimeout(async () => {
             // will have to reset context because turn has now ended.
             await bot.changeContext(message.reference);
-            await bot.reply(message, `I am ${resume.basic.age} years old.`);
+            await bot.reply(message, `I am ${resume.basics.age} years old.`);
         }, 1000);
     });
 
@@ -18,7 +18,7 @@ module.exports = function(controller) {
         setTimeout(async () => {
             // will have to reset context because turn has now ended.
             await bot.changeContext(message.reference);
-            await bot.reply(message, `I am located in ${resume.basic.location.city}. Although I'm open to remote work and possibly relocation for the right company.`);
+            await bot.reply(message, `I am located in ${resume.basics.location.city}. Although I'm open to remote work and possibly relocation for the right company.`);
         }, 1000);
     });
     
