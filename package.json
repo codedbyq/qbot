@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@featurepeek/peek": "0.6.8",
     "botbuilder-adapter-web": "1.0.9",
     "botbuilder-storage-mongodb": "^0.9.5",
     "botkit": "^4.10.0",
