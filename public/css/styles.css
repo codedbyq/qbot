@@ -365,3 +365,33 @@ a.button:hover {
   border-radius: 100px;
   margin-right: 10px;
 }
+
+.message_div {
+  display: flex;
+  align-items: center;
+}
+
+.message_avatar {
+  height: 50px;
+  width: 50px;
+}
+
+.user_input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_label {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+} 
+
+.input_label > label {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 100;
+  color: #333;
+  margin-bottom: 10px;
+}

@@ -246,7 +246,7 @@ var Botkit = {
         if (message.text) {
             message.html = converter.makeHtml(message.text);
         }
-
+        
         that.next_line.innerHTML = that.message_template({
             message: message
         });

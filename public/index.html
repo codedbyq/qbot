@@ -40,7 +40,7 @@
                         {{#message.files}}
                           <div class="file_attachment">
                           {{#if image}}
-                            <img src="{{{url}}}" alt="{{{url}}}" />
+                            <img src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt="{{{url}}}" />
                           {{else}}
                             <a href="{{{url}}}" title="{{{url}}}">{{{url}}}</a>
                           {{/if}}
@@ -52,9 +52,12 @@
             <div id="message_replies">
             </div>
             <footer>
-                <form onsubmit="Botkit.send(Botkit.input.value, event)">
-                    <input type="text" autocomplete="off" id="messenger_input" placeholder="Type here..." />
-                    <button type="submit">Send</button>
+                <form class='user_input' onsubmit="Botkit.send(Botkit.input.value, event)">
+                  <span class="input_label">
+                    <label>Reply to QBot</label>
+                    <input type="text" autocomplete="off" id="messenger_input" />
+                  </span>
+                  <button type="submit">Send</button>
                 </form>
             </footer>
         </div>
