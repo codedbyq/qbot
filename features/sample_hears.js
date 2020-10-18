@@ -9,6 +9,12 @@ module.exports = function(controller) {
         await bot.reply(message, 'I heard "foo" via a function test');
     });
 
+    // use a function to match a condition in the message
+    const greetings = ['hello', 'hi', 'hey', 'hola'];
+    controller.hears(async (message) => message.text && greetings.includes(message.text.toLowerCase()), ['message'], async (bot, message) => {
+        await bot.reply(message, 'Hiiiiiiiii');
+    });
+
     // use a regular expression to match the text of the message
     controller.hears(new RegExp(/^\d+$/), ['message','direct_message'], async function(bot, message) {
         await bot.reply(message,{ text: 'I heard a number using a regular expression.' });

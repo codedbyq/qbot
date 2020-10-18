@@ -43,3 +43,5 @@ module.exports = function(controller) {
     });
     
 }
+
+// add dialog for 'contact, connect, reach' that prompts the different contact methods
