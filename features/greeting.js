@@ -7,7 +7,35 @@ module.exports = function(controller) {
         setTimeout(async () => {
             // will have to reset context because turn has now ended.
             await bot.changeContext(message.reference);
-            await bot.reply(message, 'Care to know more?');
+            await bot.reply(message, {
+                text: 'What would you like to know about me?',
+                quick_replies: [
+                    {
+                        title: 'Basics',
+                        payload: 'Tell me more about the basics.',
+                    },
+                    {
+                        title: 'Work',
+                        payload: 'Tell me more about your work experience.',
+                    },
+                    {
+                        title: 'Education',
+                        payload: 'Tell me more about your work education.',
+                    },
+                    {
+                        title: 'Projects',
+                        payload: 'Tell me more about your projects.',
+                    },
+                    {
+                        title: 'Skill',
+                        payload: 'Tell me more about your skills.',
+                    },
+                    {
+                        title: 'Intersts',
+                        payload: 'Tell me more about your personal interests.',
+                    }
+                ]
+            });
         }, 1000);
     });
 
@@ -18,7 +46,35 @@ module.exports = function(controller) {
         setTimeout(async () => {
             // will have to reset context because turn has now ended.
             await bot.changeContext(message.reference);
-            await bot.reply(message, 'Care to know more?');
+            await bot.reply(message, {
+                text: 'What would you like to know about me?',
+                quick_replies: [
+                    {
+                        title: 'Basics',
+                        payload: 'Tell me more about the basics.',
+                    },
+                    {
+                        title: 'Work',
+                        payload: 'Tell me more about your work experience.',
+                    },
+                    {
+                        title: 'Education',
+                        payload: 'Tell me more about your work education.',
+                    },
+                    {
+                        title: 'Projects',
+                        payload: 'Tell me more about your projects.',
+                    },
+                    {
+                        title: 'Skill',
+                        payload: 'Tell me more about your skills.',
+                    },
+                    {
+                        title: 'Intersts',
+                        payload: 'Tell me more about your personal interests.',
+                    }
+                ]
+            });
         }, 1000);
     });
     

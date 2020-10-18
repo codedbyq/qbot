@@ -21,7 +21,7 @@ module.exports = function(controller) {
                     },
                     {
                         title: 'Arizona State',
-                        payload: 'Tell me more about Arizona State University',
+                        payload: 'bar',
                     }
                 ]
             });
