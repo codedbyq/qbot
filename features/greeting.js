@@ -9,6 +9,7 @@ module.exports = function(controller) {
             await bot.changeContext(message.reference);
             await bot.reply(message, {
                 text: 'What would you like to know about me?',
+                // provide user with premade questions
                 quick_replies: [
                     {
                         title: 'Basics',
@@ -48,6 +49,7 @@ module.exports = function(controller) {
             await bot.changeContext(message.reference);
             await bot.reply(message, {
                 text: 'What would you like to know about me?',
+                // provide user with premade questions
                 quick_replies: [
                     {
                         title: 'Basics',
