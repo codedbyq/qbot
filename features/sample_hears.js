@@ -12,7 +12,10 @@ module.exports = function(controller) {
     // use a function to match a condition in the message
     const greetings = ['hello', 'hi', 'hey', 'hola'];
     controller.hears(async (message) => message.text && greetings.includes(message.text.toLowerCase()), ['message'], async (bot, message) => {
-        await bot.reply(message, 'Hiiiiiiiii');
+        await controller.ask('Hello! What is your name?', async(answer) => {
+            controller.say(`Nice to meet you, ${answer.name}.`)
+        }, {key: 'name'});
+
     });
 
     // use a regular expression to match the text of the message

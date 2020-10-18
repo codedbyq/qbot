@@ -1,20 +1,18 @@
 const resume = require('./resume.json');
+
 module.exports = function(controller) {
-    // const greetings = ['hello', 'hi', 'hey', 'hola']
-    // controller.on('connected', async(bot, message) => {
-    //     await bot.reply(message, `Hello! My name is Marquis, I'm a Software Engineer from Oakland, CA.`);
-    // });
-    // controller.on('welcome_back', async(bot, message) => {
-    //     await bot.reply(message, `Hello! My name is Marquis, I'm a Software Engineer from Oakland, CA.`);
-    //     await bot.reply(message, `Care to know more?`);
-    // });
-    
-    controller.hears('name','message,direct_message', async(bot, message) => {
-        await bot.reply(message, `My name is ${resume.basics.name}`);
-    });
 
-    controller.hears('experience','message,direct_message', async(bot, message) => {
-        await bot.reply(message, "Would you like to know what I'm working on currently, or an overview of my recent experience?");
+    // list work history
+    controller.hears('job history','message,direct_message', async(bot, message) => {
+        for (let job of resume.work) {
+            await bot.reply(message, {type: 'typing'});
+            setTimeout(async () => {
+                // will have to reset context because turn has now ended.
+                await bot.changeContext(message.reference);
+                await bot.reply(message, `I worked for ${job.company} as a ${job.position} from ${job.startDate} to ${job.endDate}!`);
+            }, 2000);
+        }
     });
-
 }
+
+// ask for a follow up about a particular job

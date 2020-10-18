@@ -69,7 +69,8 @@
   "education": [
     {
       "institution": "App Academy",
-      "description": "highly selective full-stack engineering program with a 3% acceptance rate.",
+      "major": "Full Stack Software Engineering",
+      "description": "highly selective full stack engineering program with a 3% acceptance rate.",
       "startDate": "April 2020",
       "endDate": "August 2020",
       "gpa": null
