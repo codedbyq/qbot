@@ -61,7 +61,7 @@ module.exports = function(controller) {
                     },
                     {
                         title: 'Education',
-                        payload: 'Tell me more about your work education.',
+                        payload: 'Tell me more about your education.',
                     },
                     {
                         title: 'Projects',
