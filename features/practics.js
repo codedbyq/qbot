@@ -1,7 +1,11 @@
+const resume = require('./resume.json');
+
 module.exports = function(controller) {
 
-    controller.hears('sample','message,direct_message', async(bot, message) => {
-        await bot.reply(message, 'I heard a sample message.');
+    controller.hears('school','message,direct_message', async(bot, message) => {
+        for (let school of resume.education) {
+            await bot.reply(message, `I went to ${school.institution} from ${school.startDate} to ${school.endDate}.`);
+        }
     });
 
     controller.hears('hmmm','message,direct_message', async(bot, message) => {
