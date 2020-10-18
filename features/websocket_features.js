@@ -2,6 +2,8 @@
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Licensed under the MIT License.
  */
+const resume = require('./resume.json');
+
 module.exports = function(controller) {
 
     if (controller.adapter.name === 'Web Adapter') {
@@ -11,15 +13,15 @@ module.exports = function(controller) {
         controller.hears(new RegExp('quick'), 'message', async (bot, message) => {
 
             await bot.reply(message,{
-                text: 'Here are some quick replies',
+                text: 'Which would you like to know more about?',
                 quick_replies: [
                     {
-                        title: 'Foo',
-                        payload: 'foo',
+                        title: 'App Academy',
+                        payload: 'Tell me more about App Academy',
                     },
                     {
-                        title: 'Bar',
-                        payload: 'bar',
+                        title: 'Arizona State',
+                        payload: 'Tell me more about Arizona State University',
                     }
                 ]
             });

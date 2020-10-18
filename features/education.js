@@ -14,3 +14,6 @@ module.exports = function(controller) {
         }
     });
 }
+
+// payload: `App Academy is a ${resume.education[0].description}. I graduated from App Academy in ${resume.education[0].endDate}`,
+// add prompts to follow up on more details about either school

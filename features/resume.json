@@ -69,14 +69,14 @@
   "education": [
     {
       "institution": "App Academy",
-      "description": "Highly selective full-stack engineering program with a 3% acceptance rate.",
+      "description": "highly selective full-stack engineering program with a 3% acceptance rate.",
       "startDate": "April 2020",
       "endDate": "August 2020",
       "gpa": null
     },
     {
       "institution": "Arizona State University",
-      "description": "Coursework in Software Engineering and Computer Science.",
+      "description": "coursework in Software Engineering and Computer Science.",
       "startDate": "August 2018",
       "endDate": "March 2020",
       "gpa": "3.2"
