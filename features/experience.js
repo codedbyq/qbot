@@ -51,6 +51,36 @@ module.exports = function(controller) {
         }, 1000);
     });
 
+    controller.hears('working with Project Happy', 'message, direct_message', async(bot, message) => {
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const job = resume.work[1]
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `I worked for ${job.company} as a ${job.position} where ${job.summary}.`);
+        }, 1000);
+    });
+
+    controller.hears('working with Enjoy', 'message, direct_message', async(bot, message) => {
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const job = resume.work[2]
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `I worked for ${job.company} as a ${job.position} where ${job.summary}.`);
+        }, 1000);
+    });
+
+    controller.hears('working with Best Buy', 'message, direct_message', async(bot, message) => {
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const job = resume.work[3]
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `I worked for ${job.company} as a ${job.position} where ${job.summary}.`);
+        }, 1000);
+    });
+
 }
 
 // ask for a follow up about a particular job
