@@ -16,7 +16,6 @@ html {
   position: relative;
   max-width: 300px;
   height: 700px;
-  margin: 0 auto;
   -webkit-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
   -moz-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
   box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
@@ -373,6 +372,14 @@ a.button:hover {
   cursor: pointer;
 }
 
+#close_btn:hover {
+  font-weight: bolder;
+}
+
+#close_btn:focus {
+  outline: none;
+}
+
 .header_title {
   font-size: 25px;
   color: white;
@@ -419,25 +426,46 @@ a.button:hover {
 }
 
 .landing {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: space-evenly;
   align-items: center;
   height: 100%;
+  width: 100%;
+  padding: 30px;
   background: rgb(224,120,134);
   background: linear-gradient(28deg, rgba(224,120,134,1) 0%, rgba(166,102,140,1) 44%, rgba(96,79,147,1) 100%);
 }
 
 .main {
-  border: 1px solid red;
   display: flex;
   height: 100%;
-  width: 66%;
-  padding: 20px 30px;
+  width: 55%;
   font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  -webkit-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
+  -moz-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
+  box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
 }
 
-.main > h1 {
+.landing_banner {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  width: 100%;
+  height: fit-content;
+  font-family: inherit;
+  font-size: 22px;
+  background: rgb(224,120,134);
+  background: linear-gradient(28deg, rgba(224,120,134,1) 0%, rgba(166,102,140,1) 44%, rgba(96,79,147,1) 100%);
+}
+
+.landing_banner > h1 {
   font-family: 'Poppins', sans-serif;
   color: whitesmoke;
   font-size: 42px;
+  margin-bottom: 5px;
+}
+
+#real_time {
+  color: black;
 }
