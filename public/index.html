@@ -7,61 +7,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body >
-      <div class="wrapper">
+      <div class="landing">
+        <div class="main">
+          <h1>Chat in real time with QBot</h1>
+        </div>
 
-        <div id="message_window">
-            <div class="disconnected">
-                Disconnected... reconnecting!
-            </div>
-            <div class="offline">
-                Offline! Reload to reconnect.
-            </div>
-            <div class="header_tab">
-              <img class="header_avatar" src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt='avatar' height="120px" width="120px">
-              <h1 class="header_title">QBot</h1>
-            </div>
-            <section>
-                <div id="message_list">
-                    <div id="message_template">
-                        <div class="message {{message.type}}">
-                            {{#if message.isTyping}}
-                              <div class="typing-indicator">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            {{/if}}
-                            {{{message.html}}}
-
-                            {{#if message.open_link}}
-                              <a href="{{{message.open_link}}}" target="_blank" class="button_message">{{#if message.link_title}}{{message.link_title}}{{else}}{{message.open_link}}{{/if}}</a>
-                            {{/if}}
-                        </div>
-                        {{#message.files}}
-                          <div class="file_attachment">
-                          {{#if image}}
-                            <img src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt="{{{url}}}" />
-                          {{else}}
-                            <a href="{{{url}}}" title="{{{url}}}">{{{url}}}</a>
-                          {{/if}}
+        <div class="wrapper">
+  
+          <div id="message_window">
+              <div class="disconnected">
+                  Disconnected... reconnecting!
+              </div>
+              <div class="offline">
+                  Offline! Reload to reconnect.
+              </div>
+              <div class="header_tab">
+                <img class="header_avatar" src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt='avatar' height="120px" width="120px">
+                <h1 class="header_title">QBot</h1>
+              </div>
+              <section>
+                  <div id="message_list">
+                      <div id="message_template">
+                          <div class="message {{message.type}}">
+                              {{#if message.isTyping}}
+                                <div class="typing-indicator">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                </div>
+                              {{/if}}
+                              {{{message.html}}}
+  
+                              {{#if message.open_link}}
+                                <a href="{{{message.open_link}}}" target="_blank" class="button_message">{{#if message.link_title}}{{message.link_title}}{{else}}{{message.open_link}}{{/if}}</a>
+                              {{/if}}
                           </div>
-                        {{/message.files}}
-                    </div>
-                </div>
-            </section>
-            <div id="message_replies">
-            </div>
-            <footer>
-                <form class='user_input' onsubmit="Botkit.send(Botkit.input.value, event)">
-                  <span class="input_label">
-                    <label>Reply to QBot</label>
-                    <input type="text" autocomplete="off" id="messenger_input" />
-                  </span>
-                  <button type="submit">Send</button>
-                </form>
-            </footer>
-        </div>
-        </div>
+                          {{#message.files}}
+                            <div class="file_attachment">
+                            {{#if image}}
+                              <img src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt="{{{url}}}" />
+                            {{else}}
+                              <a href="{{{url}}}" title="{{{url}}}">{{{url}}}</a>
+                            {{/if}}
+                            </div>
+                          {{/message.files}}
+                      </div>
+                  </div>
+              </section>
+              <div id="message_replies">
+              </div>
+              <footer>
+                  <form class='user_input' onsubmit="Botkit.send(Botkit.input.value, event)">
+                    <span class="input_label">
+                      <label>Reply to QBot</label>
+                      <input type="text" autocomplete="off" id="messenger_input" />
+                    </span>
+                    <button type="submit">Send</button>
+                  </form>
+              </footer>
+          </div>
+          </div>
+      </div>
+
         <script src="/client.js"></script>
     </body>
 </html>

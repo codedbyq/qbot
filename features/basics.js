@@ -2,6 +2,18 @@ const resume = require('./resume.json');
 
 module.exports = function(controller) {
     
+    const basics = resume.basics;
+
+    // basics
+    controller.hears('tell me more about the basics','message,direct_message', async(bot, message) => {
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `I am a ${basics.age} year old ${basics.title} in ${basics.city}.`);
+        }, 1000);
+    });
+
     // age
     controller.hears('age','message,direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
