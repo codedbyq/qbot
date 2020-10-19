@@ -8,7 +8,6 @@ html {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  background-color: #FFF;
   font-family: "helvetica", sans-serif;
 }
 
@@ -436,8 +435,14 @@ a.button:hover {
   background: linear-gradient(28deg, rgba(224,120,134,1) 0%, rgba(166,102,140,1) 44%, rgba(96,79,147,1) 100%);
 }
 
+.landing_img {
+  height: 200px;
+  width: 200px;
+}
+
 .main {
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 55%;
   font-family: 'Open Sans', sans-serif;
@@ -445,6 +450,8 @@ a.button:hover {
   -webkit-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
   -moz-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
   box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .landing_banner {
@@ -468,4 +475,18 @@ a.button:hover {
 
 #real_time {
   color: black;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  width: 100%;
+  font-family: inherit;
+}
+
+.meet {
+  display: flex;
+  flex-direction: row;
+
 }
