@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body >
-
+      
       <div class="landing">
         <div class="main">
           <header class="landing_banner">
@@ -42,79 +42,83 @@
 
           </div>
         </div>
-
-        <div id="wrapper">
-          <div id="message_window">
-              <div class="disconnected">
-                  Disconnected... reconnecting!
-              </div>
-              <div class="offline">
-                  Offline! Reload to reconnect.
-              </div>
-              <div class="header_tab">
-                  <img class="header_avatar" src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt='avatar' height="120px" width="120px">
-                  <h1 class="header_title">QBot</h1>
-                <section class="header_right">
-                  <button id='close_btn'>x</button>
-                </section>
-              </div>
-              <section>
-                  <div id="message_list">
-                      <div id="message_template">
-                          <div class="message {{message.type}}">
-                              {{#if message.isTyping}}
-                                <div class="typing-indicator">
-                                  <span></span>
-                                  <span></span>
-                                  <span></span>
-                                </div>
-                              {{/if}}
-                              {{{message.html}}}
-  
-                              {{#if message.open_link}}
-                                <a href="{{{message.open_link}}}" target="_blank" class="button_message">{{#if message.link_title}}{{message.link_title}}{{else}}{{message.open_link}}{{/if}}</a>
-                              {{/if}}
-                          </div>
-                          {{#message.files}}
-                            <div class="file_attachment">
-                            {{#if image}}
-                              <img src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt="{{{url}}}" />
-                            {{else}}
-                              <a href="{{{url}}}" title="{{{url}}}">{{{url}}}</a>
-                            {{/if}}
+        <div class="chatbot">
+        
+          <div id="wrapper">
+            <div id="message_window">
+                <div class="disconnected">
+                    Disconnected... reconnecting!
+                </div>
+                <div class="offline">
+                    Offline! Reload to reconnect.
+                </div>
+                <div class="header_tab">
+                    <img class="header_avatar" src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt='avatar' height="120px" width="120px">
+                    <h1 class="header_title">QBot</h1>
+                  <section class="header_right">
+                    <button id='close_btn'>x</button>
+                  </section>
+                </div>
+                <section>
+                    <div id="message_list">
+                        <div id="message_template">
+                            <div class="message {{message.type}}">
+                                {{#if message.isTyping}}
+                                  <div class="typing-indicator">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                  </div>
+                                {{/if}}
+                                {{{message.html}}}
+    
+                                {{#if message.open_link}}
+                                  <a href="{{{message.open_link}}}" target="_blank" class="button_message">{{#if message.link_title}}{{message.link_title}}{{else}}{{message.open_link}}{{/if}}</a>
+                                {{/if}}
                             </div>
-                          {{/message.files}}
-                      </div>
-                  </div>
-              </section>
-              <div id="message_replies">
-              </div>
-              <footer>
-                  <form class='user_input' onsubmit="Botkit.send(Botkit.input.value, event)">
-                    <span class="input_label">
-                      <label>Reply to QBot</label>
-                      <input type="text" autocomplete="off" id="messenger_input" />
-                    </span>
-                    <button type="submit">Send</button>
-                  </form>
-              </footer>
+                            {{#message.files}}
+                              <div class="file_attachment">
+                              {{#if image}}
+                                <img src="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" alt="{{{url}}}" />
+                              {{else}}
+                                <a href="{{{url}}}" title="{{{url}}}">{{{url}}}</a>
+                              {{/if}}
+                              </div>
+                            {{/message.files}}
+                        </div>
+                    </div>
+                </section>
+                <div id="message_replies">
+                </div>
+                <footer>
+                    <form class='user_input' onsubmit="Botkit.send(Botkit.input.value, event)">
+                      <span class="input_label">
+                        <label>Reply to QBot</label>
+                        <input type="text" autocomplete="off" id="messenger_input" />
+                      </span>
+                      <button type="submit">Send</button>
+                    </form>
+                </footer>
+            </div>
+          </div>
+          <div id="open_chat" class="hidden">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                  stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                  font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M28.66667,21.5c-7.88333,0 -14.26335,6.45 -14.26335,14.33333l-0.05599,85.986c0,7.91917 6.41417,14.34733 14.33333,14.34733h14.31934v28.66667l28.66667,-28.66667h71.66667c7.88333,0 14.33333,-6.45 14.33333,-14.33333v-86c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </button>
           </div>
         </div>
-        <button id="open_chat" class="hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
-            style=" fill:#000000;">
-            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-              <path d="M0,172v-172h172v172z" fill="none"></path>
-              <g fill="#ffffff">
-                <path
-                  d="M28.66667,21.5c-7.88333,0 -14.26335,6.45 -14.26335,14.33333l-0.05599,85.986c0,7.91917 6.41417,14.34733 14.33333,14.34733h14.31934v28.66667l28.66667,-28.66667h71.66667c7.88333,0 14.33333,-6.45 14.33333,-14.33333v-86c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333z">
-                </path>
-              </g>
-            </g>
-          </svg>
-        </button>
       </div>
 
         <script src="/client.js"></script>
