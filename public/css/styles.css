@@ -521,9 +521,10 @@ a.button:hover {
 }
 
 #open_chat > button{
-  border: none;
   height: 60px;
   width: 60px;
+  border: none;
+  border-radius: 5px;
   background: rgb(224,120,134);
   background: linear-gradient(28deg, rgba(224,120,134,1) 0%, rgba(166,102,140,1) 44%, rgba(96,79,147,1) 100%);
   -webkit-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
