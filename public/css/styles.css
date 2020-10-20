@@ -514,12 +514,26 @@ a.button:hover {
   box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
 }
 
+
+#open_chat:hover {
+  cursor: pointer;
+  /* on hover - scale to this x,y size */
+  transform: scale(1.15,1.15);
+  /* property values: name, duration, iteration, timing-function */
+  animation: jiggle 0.4s infinite linear;
+}
+
+@keyframes jiggle {
+  /* start at 0deg and this scale size.
+     scale size is repeated here to maintain smooth scaling */
+  0% {transform: rotate(0deg) scale(1.15,1.15);}
+  /* midway rotate 2deg right */
+  50% {transform: rotate(6deg) scale(1.15,1.15);}
+  /* end rotate -2deg left */
+  100% {transform: rotate(-6deg) scale(1.15,1.15)}
+}
+
 #open_chat:focus {
   outline: none;
 }
 
-#open_chat:hover {
-  height: 61px;
-  width: 61px;
-  cursor: pointer;
-}
