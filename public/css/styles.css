@@ -11,7 +11,7 @@ html {
   font-family: "helvetica", sans-serif;
 }
 
-.wrapper {
+#wrapper {
   position: relative;
   max-width: 310px;
   height: 700px;
@@ -19,7 +19,7 @@ html {
   -moz-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
   box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
 }
-.wrapper:after {
+#wrapper:after {
   content: "";
   display: table;
   clear: both;
@@ -499,3 +499,27 @@ a.button:hover {
   margin-bottom: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
+#open_chat {
+  border: none;
+  height: 60px;
+  width: 60px;
+  background: rgb(224,120,134);
+  background: linear-gradient(28deg, rgba(224,120,134,1) 0%, rgba(166,102,140,1) 44%, rgba(96,79,147,1) 100%);
+  -webkit-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
+  -moz-box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
+  box-shadow: 13px 13px 29px 3px rgba(30,24,45,1);
+}
+
+#open_chat:focus {
+  outline: none;
+}
+
+#open_chat:hover {
+  height: 61px;
+  width: 61px;
+  cursor: pointer;
+}

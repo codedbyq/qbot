@@ -1,12 +1,14 @@
 <html>
     <head>
         <title>QBot</title>
+        <link rel="shortcut icon" href="./avatars/4bcbc8578c6058ed195a3566639ebb74-sticker.png" type="image/png">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
         <script src="https://cdn.rawgit.com/showdownjs/showdown/1.7.4/dist/showdown.min.js"></script>
         <link rel="stylesheet" href="/css/reset.css" />
         <link rel="stylesheet" href="/css/styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&display=swap"
           rel="stylesheet">
+        <script src="./landing.js" type="application/javascript"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body >
@@ -37,7 +39,7 @@
           </div>
         </div>
 
-        <div class="wrapper">
+        <div id="wrapper">
           <div id="message_window">
               <div class="disconnected">
                   Disconnected... reconnecting!
@@ -93,7 +95,22 @@
                   </form>
               </footer>
           </div>
-          </div>
+        </div>
+        <button id="open_chat" class="hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+            style=" fill:#000000;">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+              stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+              font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#ffffff">
+                <path
+                  d="M28.66667,21.5c-7.88333,0 -14.26335,6.45 -14.26335,14.33333l-0.05599,85.986c0,7.91917 6.41417,14.34733 14.33333,14.34733h14.31934v28.66667l28.66667,-28.66667h71.66667c7.88333,0 14.33333,-6.45 14.33333,-14.33333v-86c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333z">
+                </path>
+              </g>
+            </g>
+          </svg>
+        </button>
       </div>
 
         <script src="/client.js"></script>
