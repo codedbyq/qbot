@@ -3,6 +3,7 @@
         <title>QBot</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
         <script src="https://cdn.rawgit.com/showdownjs/showdown/1.7.4/dist/showdown.min.js"></script>
+        <link rel="stylesheet" href="/css/reset.css" />
         <link rel="stylesheet" href="/css/styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&display=swap"
           rel="stylesheet">
@@ -14,22 +15,29 @@
         <div class="main">
           <header class="landing_banner">
             <h1>Have a <span id="real_time">real time</span>  <br> conversation with QBot</h1>
-            <p>Live chatbot built with <a href="http://www.botkit.ai">BotKit</a>, a flexible tool for creating conversational software of all types. </p>
+            <p>Live chatbot built with <a href="http://www.botkit.ai">BotKit</a>, a flexible tool for creating conversational software of all types. Try it out for yourself, or continue reading to learn more about the types of things you can say or ask QBot!</p>
           </header>
           
           <div class="main_content">
-            <div class="meet">
+            <div class="content_section">
               <div>
-                <h1>Meet QBot</h1>
+                <h1 class="content_title">Meet QBot</h1>
+                <p>QBot is the digital avatar of creator Marquis Bentley, created with BotKit. With QBot you can have natural conversations that offer more insight about the creator's resume and personal interests.</p>
+              </div>
+              <img class="landing_img" src="./avatars/19E04CF9-2888-4953-B4C8-FF192ADCB464_AK296000_f7fff7620131781a230c0138d903eb91_happy_person_raising_one_hand.png" alt="avatar-peace">
+            </div>
+
+            <div class="content_section">
+              <div>
+                <h1 class="content_title">What can you say to QBot?</h1>
                 <p>QBot is the digital avatar of creator Marquis Bentley, created with BotKit.</p>
               </div>
-              <img class="landing_img" src="./avatars/071ffadf2cbb3a74c5a029315dd972e2-sticker.png" alt="avatar-peace">
             </div>
+
           </div>
         </div>
 
         <div class="wrapper">
-  
           <div id="message_window">
               <div class="disconnected">
                   Disconnected... reconnecting!
