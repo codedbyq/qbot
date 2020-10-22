@@ -10,7 +10,7 @@ module.exports = function(controller) {
         setTimeout(async () => {
             // will have to reset context because turn has now ended.
             await bot.changeContext(message.reference);
-            await bot.reply(message, `I am a ${basics.age} year old ${basics.title} in ${basics.city}.`);
+            await bot.reply(message, `I am a ${basics.age} year old ${basics.title} in ${basics.location.city}.`);
         }, 1000);
     });
 
