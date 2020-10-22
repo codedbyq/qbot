@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         chatbot.classList.add('close');
         chatbot.classList.remove('connected');
+        openChat.classList.add('show')
         openChat.classList.remove('hidden');
     });
 
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         chatbot.classList.remove('close');
         chatbot.classList.add('connected');
+        openChat.classList.remove('show')
         openChat.classList.add('hidden');
     })
     
