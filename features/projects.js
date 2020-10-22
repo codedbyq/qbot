@@ -37,4 +37,63 @@ module.exports = function(controller) {
         }, 2000);
     });
 
+
+    controller.hears('cloudsound', 'message, direct_message', async(bot, message) => {
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const project = resume.projects[0];
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `${project.name} is a ${project.description}.`);
+        }, 1200);
+
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const project = resume.projects[0];
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `Heres a link to check it out! ${project.link}`);
+        }, 900);
+
+    });
+
+    controller.hears('taco tuesday', 'message, direct_message', async(bot, message) => {
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const project = resume.projects[0];
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `${project.name} is a ${project.description}.`);
+        }, 1200);
+
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const project = resume.projects[0];
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `Heres a link to check it out! ${project.link}`);
+        }, 900);
+
+    });
+
+    controller.hears('mastery', 'message, direct_message', async(bot, message) => {
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const project = resume.projects[0];
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `${project.name} is a ${project.description}.`);
+        }, 1200);
+
+        await bot.reply(message, {type: 'typing'});
+        setTimeout(async () => {
+            // will have to reset context because turn has now ended.
+            const project = resume.projects[0];
+            await bot.changeContext(message.reference);
+            await bot.reply(message, `Heres a link to check it out! ${project.link}`);
+        }, 900);
+
+    });
+
+
 };
