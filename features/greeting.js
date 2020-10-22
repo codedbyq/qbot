@@ -28,7 +28,7 @@ module.exports = function(controller) {
                         payload: 'Tell me more about your projects.',
                     },
                     {
-                        title: 'Skill',
+                        title: 'Skills',
                         payload: 'Tell me more about your skills.',
                     },
                     {
@@ -68,11 +68,11 @@ module.exports = function(controller) {
                         payload: 'Tell me more about your projects.',
                     },
                     {
-                        title: 'Skill',
+                        title: 'Skills',
                         payload: 'Tell me more about your skills.',
                     },
                     {
-                        title: 'Intersts',
+                        title: 'Interests',
                         payload: 'Tell me more about your personal interests.',
                     }
                 ]
