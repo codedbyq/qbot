@@ -84,18 +84,18 @@
     }
   ],
   "skills": [
-    { "name": "javascript", "years": 2 },
-    { "name": "react", "years": 1 },
-    { "name": "redux", "years": 1 },
-    { "name": "python", "years": 1 },
-    { "name": "ruby on rails", "years": 1 },
-    { "name": "html", "years": 3 },
-    { "name": "css", "years": 3 },
-    { "name": "sass", "years": 1 },
-    { "name": "postgresql", "years": 1 },
-    { "name": "sql", "years": 1 },
-    { "name": "mongodb", "years": 1 },
-    { "name": "aws", "years": 1 },
-    { "name": "git", "years": 1 }
+    { "name": "JavaScript", "years": 2 },
+    { "name": "React", "years": 1 },
+    { "name": "Redux", "years": 1 },
+    { "name": "Python", "years": 1 },
+    { "name": "Ruby on Rails", "years": 1 },
+    { "name": "HTML", "years": 3 },
+    { "name": "CSS", "years": 3 },
+    { "name": "SASS", "years": 1 },
+    { "name": "Postgresql", "years": 1 },
+    { "name": "SQL", "years": 1 },
+    { "name": "NongoDB", "years": 1 },
+    { "name": "AWS", "years": 1 },
+    { "name": "GIT", "years": 1 }
   ]
 }

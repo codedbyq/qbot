@@ -2,7 +2,7 @@ const resume = require('./resume.json');
 
 module.exports = function(controller) {
 
-    // list work history
+    // list work history and prompt follow up
     controller.hears('work experience','message,direct_message', async(bot, message) => {
         for (let job of resume.work) {
             await bot.reply(message, {type: 'typing'});
@@ -41,6 +41,7 @@ module.exports = function(controller) {
         }, 2000);
     });
 
+    // app academy
     controller.hears('working with App Academy', 'message, direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
         setTimeout(async () => {
@@ -51,6 +52,7 @@ module.exports = function(controller) {
         }, 1000);
     });
 
+    // project happy
     controller.hears('working with Project Happy', 'message, direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
         setTimeout(async () => {
@@ -61,6 +63,7 @@ module.exports = function(controller) {
         }, 1000);
     });
 
+    // enjoy technology
     controller.hears('working with Enjoy', 'message, direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
         setTimeout(async () => {
@@ -71,6 +74,7 @@ module.exports = function(controller) {
         }, 1000);
     });
 
+    // best buy
     controller.hears('working with Best Buy', 'message, direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
         setTimeout(async () => {
@@ -81,6 +85,4 @@ module.exports = function(controller) {
         }, 1000);
     });
 
-}
-
-// ask for a follow up about a particular job
+};
