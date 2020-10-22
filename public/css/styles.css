@@ -569,3 +569,26 @@ a.button:hover {
   justify-content: center;
   align-items: center;
 }
+
+.sub_title {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.dialog_description {
+  margin-bottom: 2px;
+}
+
+.user_promt {
+  font-size: 15px;
+  list-style: square;
+}
+
+.i {
+  font-style: italic;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
