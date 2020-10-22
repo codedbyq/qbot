@@ -49,20 +49,20 @@
   "projects": [
     {
         "name": "CloudSound",
-        "description": "Community driven music streaming application inspired by soundcloud.com, where users can login to stream music or upload music of there own for free!",
-        "stack": "React, Redux, Rails 5, PostgreSQL, SASS",
+        "description": "community driven music streaming application inspired by soundcloud.com, where users can login to stream music or upload music of there own for free!",
+        "stack": "React, Redux, Rails 5, PostgreSQL and SASS",
         "link": "https://cloud-sound.herokuapp.com/#/"
     },
     {
         "name": "Mastery",
-        "description": "Mastery is a web application that allows users to master a skill of their choosing, track their progress, and share with friends!",
-        "stack": " React, Redux, Express.js, Node.js, MongoDB, Mongoose, SASS",
+        "description": "mastery is a web application that allows users to master a skill of their choosing, track their progress, and share with friends!",
+        "stack": " React, Redux, Express.js, Node.js, MongoDB, Mongoose and SASS",
         "link": "https://masteryapp.herokuapp.com"
     },
     {
         "name": "Taco Tuesday",
-        "description": "Food themed matching game inspired by Lebron James, where the user has to match the ingredients of a customer's order.",
-        "stack": "JavaScript (ES6), HTML5, CSS3",
+        "description": "food themed matching game inspired by Lebron James, where the user has to match the ingredients of a customer's order.",
+        "stack": "JavaScript (ES6), HTML5, and CSS3",
         "link": "https://www.marquisbentley.com/TacoTuesday/"
     }
   ],
