@@ -2,7 +2,7 @@ const resume = require('./resume.json');
 
 module.exports = function(controller) {
 
-    // list work history
+    // list projects and prompt a response
     controller.hears('projects','message,direct_message', async(bot, message) => {
         for (let project of resume.projects) {
             await bot.reply(message, {type: 'typing'});
@@ -37,7 +37,7 @@ module.exports = function(controller) {
         }, 2000);
     });
 
-
+    // cloudsound
     controller.hears('cloudsound', 'message, direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
         setTimeout(async () => {
@@ -57,6 +57,7 @@ module.exports = function(controller) {
 
     });
 
+    // taco tuesday
     controller.hears('taco tuesday', 'message, direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
         setTimeout(async () => {
@@ -76,6 +77,8 @@ module.exports = function(controller) {
 
     });
 
+
+    // mastery
     controller.hears('mastery', 'message, direct_message', async(bot, message) => {
         await bot.reply(message, {type: 'typing'});
         setTimeout(async () => {
@@ -94,6 +97,5 @@ module.exports = function(controller) {
         }, 900);
 
     });
-
 
 };
