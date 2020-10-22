@@ -449,6 +449,7 @@ a.button:hover {
 .landing_img {
   height: 200px;
   width: 200px;
+  margin-bottom: 10px;
 }
 
 .main {
@@ -513,6 +514,22 @@ a.button:hover {
   font-weight: 400;
   color: #856ccb;
   margin-bottom: 10px;
+}
+
+.meet {
+  width: fit-content;
+}
+
+.meet_qbot {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .hidden {
